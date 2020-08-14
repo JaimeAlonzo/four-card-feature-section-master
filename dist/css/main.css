@@ -1,0 +1,131 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #fafafa;
+  color: #a3a5ae;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+}
+
+h1, h2 {
+  font-weight: 200;
+  color: #4c4e61;
+}
+
+footer {
+  bottom: 1rem;
+}
+
+.text-secondary {
+  font-weight: 600;
+}
+
+main {
+  padding: 0 2rem;
+}
+
+.features__title {
+  text-align: center;
+  margin: 3rem 0;
+}
+
+.features__title p {
+  margin-top: 1rem;
+}
+
+.features__cards {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.features__cards__card {
+  position: relative;
+  background: #fff;
+  border-top: 4px solid;
+  border-radius: 2%;
+  -webkit-box-shadow: 0 1.3rem 1.5rem 0 rgba(216, 226, 236, 0.7);
+          box-shadow: 0 1.3rem 1.5rem 0 rgba(216, 226, 236, 0.7);
+  padding: 2em;
+}
+
+.features__cards__card.cyan {
+  border-color: #45d3d3;
+}
+
+.features__cards__card.red {
+  border-color: #ea5353;
+}
+
+.features__cards__card.orange {
+  border-color: #fcaf4a;
+}
+
+.features__cards__card.blue {
+  border-color: #549ef2;
+}
+
+.features__cards__card p {
+  font-size: 1rem;
+  margin-bottom: 3rem;
+}
+
+.features__cards__card img {
+  display: block;
+  margin-left: auto;
+}
+
+@media screen and (min-width: 1024px) {
+  html {
+    font-size: 85%;
+  }
+  .features {
+    padding: 0 15%;
+  }
+  .features__title {
+    padding: 0 28%;
+  }
+  .features__title h1 {
+    font-size: 1.6rem;
+  }
+  .features__cards {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+  .features__cards__card.cyan {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    grid-row: 1/3;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .features__cards__card.red {
+    -ms-grid-column: 2;
+        grid-column-start: 2;
+  }
+  .features__cards__card.orange {
+    -ms-grid-column: 2;
+        grid-column-start: 2;
+  }
+  .features__cards__card.blue {
+    -ms-grid-column: 3;
+        grid-column-start: 3;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    grid-row: 1/3;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+}
+/*# sourceMappingURL=main.css.map */
